@@ -1,11 +1,5 @@
 # RDBMS와 JDBC를 이용한 데이터 처리 실습
-목차
-RDBMS 개요
-SQL 기초
-JDBC
-JDBC 실습
-Transaction
-ORM
+
 1. RDBMS 개요
 RDBMS 정의: 관계형 모델 기반 데이터베이스 시스템으로, 데이터를 테이블 형태로 관리합니다.
 주요 RDBMS: Oracle, MySQL, PostgreSQL, MariaDB, 클라우드 관리형 DBMS.
