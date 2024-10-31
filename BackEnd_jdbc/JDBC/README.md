@@ -33,6 +33,6 @@ CallableStatement: 저장 프로시저 호출.
 Transaction 이해: 격리 수준(Isolation Level)과 커밋(commit)/롤백(rollback) 사용.
 Auto Commit 설정: Auto commit false 설정 후 트랜잭션 제어.
 SavePoint: 부분 롤백을 위한 복구 시점 지정.
-# 제목 6. ORM (Object-Relational Mapping)
+6. ORM (Object-Relational Mapping)
 ORM 개념: 객체 지향적 데이터베이스 접근 방식.
 JPA와 Spring Data JPA: 엔터티(Entity), 리포지토리(Repository) 등을 활용한 데이터 매핑.
