@@ -1,32 +1,38 @@
-JDBC와 RDBMS 실습 프로젝트
-데이터베이스 프로그래밍의 기초를 다지기 위한 JDBC 실습. RDBMS의 기본 개념부터 JDBC를 활용한 데이터베이스 연동, 트랜잭션 처리, 그리고 최신 ORM 기술까지 단계별로 학습
-
-📚 학습 내용
-1. RDBMS 기초
-관계형 데이터베이스 관리 시스템의 개념
-MySQL 8 설치 및 환경 설정
-데이터베이스 기본 구조 이해
-2. SQL 기본
+# 제목 RDBMS와 JDBC를 이용한 데이터 처리 실습
+목차
+RDBMS 개요
+SQL 기초
+JDBC
+JDBC 실습
+Transaction
+ORM
+# 제목 1. RDBMS 개요
+RDBMS 정의: 관계형 모델 기반 데이터베이스 시스템으로, 데이터를 테이블 형태로 관리합니다.
+주요 RDBMS: Oracle, MySQL, PostgreSQL, MariaDB, 클라우드 관리형 DBMS.
+MySQL 8 사용: 실습에서는 MySQL 8 버전을 사용합니다.
+# 제목 2. SQL 기초
 DML (Data Manipulation Language)
-
-INSERT, SELECT, UPDATE, DELETE 명령어 DDL (Data Definition Language)
-CREATE TABLE, ALTER TABLE, DROP TABLE
-외래 키 제약조건 설정
-3. JDBC 프로그래밍
-JDBC 드라이버 설정 데이터베이스 연결 관리 주요 클래스 활용
-
-DriverManager
-Connection
-Statement/PreparedStatement
-ResultSet
-CallableStatement
-제목 4. 트랜잭션 관리
-트랜잭션 격리 수준
-커밋과 롤백
-SavePoint 활용
-제목 5. ORM 소개
-JPA 기초
-Spring Data JPA 활용
-🛠 개발 환경
-
-Java 17+ MySQL 8.0 Gradle IDE: IntelliJ IDEA/VScode
+Create (Insert), Read (Select), Update, Delete: 기본 데이터 조작 명령어.
+DDL (Data Definition Language)
+Create Table, Alter Table, Drop Table: 테이블 구조를 정의하고 변경합니다.
+Foreign Key Constraints: ON DELETE, ON UPDATE 등 제약 조건 설정.
+# 제목 3. JDBC
+표준 인터페이스: 데이터베이스 독립적 접근을 위한 표준화된 인터페이스.
+JDBC와 ODBC: JDBC(Java Database Connectivity)와 ODBC(Open Database Connectivity)의 차이점.
+# 제목 4. JDBC 실습
+실습 환경 준비
+Schema 및 Table 생성: 실습용 데이터베이스 및 테이블 설정.
+MySQL, JDBC 드라이버 설정: 의존성 추가 및 초기 설정.
+주요 클래스 및 메소드
+DriverManager: MySQL 연결 설정.
+Connection: 데이터베이스와의 연결 관리.
+Statement 및 PreparedStatement: SQL 명령어 실행.
+ResultSet: 쿼리 결과 처리.
+CallableStatement: 저장 프로시저 호출.
+# 제목 5. Transaction
+Transaction 이해: 격리 수준(Isolation Level)과 커밋(commit)/롤백(rollback) 사용.
+Auto Commit 설정: Auto commit false 설정 후 트랜잭션 제어.
+SavePoint: 부분 롤백을 위한 복구 시점 지정.
+# 제목 6. ORM (Object-Relational Mapping)
+ORM 개념: 객체 지향적 데이터베이스 접근 방식.
+JPA와 Spring Data JPA: 엔터티(Entity), 리포지토리(Repository) 등을 활용한 데이터 매핑.
